@@ -1,8 +1,8 @@
-# STM32H7 Dual-Core-Based Environmental Monitoring System
+# STM32H7 Dual-Core Environmental Monitoring System
 
 A high-performance environment monitoring system based on the **STM32H755ZI-Q** (Cortex-M7 + Cortex-M4). This project demonstrates an **Asymmetric Multi-Processing (AMP)** architecture to decouple sensor data acquisition from graphical user interface (GUI) rendering.
 
-## ystem Architecture
+## System Architecture
 
 This project leverages the dual-core capability of the STM32H7 series:
 
@@ -13,8 +13,6 @@ This project leverages the dual-core capability of the STM32H7 series:
 * **Cortex-M4 (CM4)**:
     * Manages sensor data acquisition for **SHT31** (Temp/Humi) and **DS3231** (RTC) via **I2C1**.
     * Processes data validation (CRC) and writes results to the shared memory region.
-
-
 
 ## Hardware Configuration
 
@@ -38,4 +36,7 @@ This project leverages the dual-core capability of the STM32H7 series:
 2. Open the `.project` file in STM32CubeIDE.
 3. Build the CM4 project first, then the CM7 project.
 4. Flash the dual-core binary to your NUCLEO-H755ZI-Q board.
- 
+
+## Result & Demo
+
+![S__4595715](https://hackmd.io/_uploads/SJak-wd9-e.jpg)
