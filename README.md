@@ -39,4 +39,6 @@ This project leverages the dual-core capability of the STM32H7 series:
 
 ## Result & Demo
 
-![S__4595715](https://hackmd.io/_uploads/SJak-wd9-e.jpg)
+<p align="center">
+  <img src="https://hackmd.io/_uploads/SJak-wd9-e.jpg" alt="S__4595715" width="400">
+</p>
