@@ -2,7 +2,7 @@
 
 A high-performance environment monitoring system based on the **STM32H755ZI-Q** (Cortex-M7 + Cortex-M4). This project demonstrates an **Asymmetric Multi-Processing (AMP)** architecture to decouple sensor data acquisition from graphical user interface (GUI) rendering.
 
-## System Architecture
+## 1. System Architecture
 
 This project leverages the dual-core capability of the STM32H7 series:
 
@@ -14,7 +14,7 @@ This project leverages the dual-core capability of the STM32H7 series:
     * Manages sensor data acquisition for **SHT31** (Temp/Humi) and **DS3231** (RTC) via **I2C1**.
     * Processes data validation (CRC) and writes results to the shared memory region.
 
-## Hardware Configuration
+## 2. Hardware Configuration
 
 | Component | Interface | Core Assignment | Key Pins |
 | :--- | :--- | :--- | :--- |
@@ -22,22 +22,22 @@ This project leverages the dual-core capability of the STM32H7 series:
 | **SHT31 / DS3231** | I2C | CM4 | PB8(SCL), PB9(SDA) |
 | **HSEM** | Internal | Dual | Hardware Semaphore for sync |
 
-## Key Technical Features
+## 3. Key Technical Features
 
 1.  **Inter-Core Communication (IPC)**: Utilizes **SRAM4 (0x38000000)** as a shared buffer. Synchronization is managed by **HSEM (Hardware Semaphore)** to prevent race conditions during multi-core read/write operations.
 
-## Development Environment
+## 4. Development Environment
 * **IDE**: STM32CubeIDE v2.1.0
 * **Configuration**: STM32CubeMX v6.17.0
 * **Framework**: HAL (Hardware Abstraction Layer)
 
-## Getting Started
+## 5. Getting Started
 1. Clone this repository.
 2. Open the `.project` file in STM32CubeIDE.
 3. Build the CM4 project first, then the CM7 project.
 4. Flash the dual-core binary to your NUCLEO-H755ZI-Q board.
 
-## Result & Demo
+## 6. Result & Demo
 
 <p align="center">
   <img src="https://hackmd.io/_uploads/SJak-wd9-e.jpg" alt="S__4595715" width="400">
