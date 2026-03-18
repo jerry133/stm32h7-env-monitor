@@ -16,10 +16,10 @@ This project leverages the dual-core capability of the STM32H7 series:
 
 ## 2. Hardware Configuration
 
-| Component | Interface | Core Assignment | Key Pins |
+| Component | Interface | Target Core | Key Pins |
 | :--- | :--- | :--- | :--- |
 | **ST7735S LCD** | SPI | CM7 | PB3(SCK), PB5(MOSI), PD15(CS), PE11(DC), PE14(RES)|
-| **SHT31 / DS3231** | I2C | CM4 | PB8(SCL), PB9(SDA) |
+| **SHT31&nbsp;/&nbsp;DS3231** | I2C | CM4 | PB8(SCL), PB9(SDA) |
 | **HSEM** | Internal | Dual | Hardware Semaphore for sync |
 
 ## 3. Key Technical Features
